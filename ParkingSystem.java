@@ -28,5 +28,7 @@ public class ParkingSystem implements IParking {
 		ParkingSystem ps = new ParkingSystem(in.nextInt(),in.nextInt(),in.nextInt());
 		System.out.println("请输入需要停车的对应号");
 		Integer carType=in.nextInt();
+		System.out.println("是否还有停车位:"+ps.addCar(carType));
+		in.close();
 	}
 }
